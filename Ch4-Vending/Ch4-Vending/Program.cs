@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ch4_Vending
+﻿namespace Ch4_Vending
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            var vendingMachine = new VendingMachine();
+            vendingMachine.DepositCoin(100);
+            vendingMachine.getDrink();
+            vendingMachine.getRefund();
         }
     }
 }
 
-//Create a Console application called “Ch4-Vending“. 
+//Create a Console application called “Ch4-Vending“.
 
 //Add a class to the application called “VendingMachine“.This class will be composed of one field(i.e., instance variable or attribute) and several methods as follows:
 

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ch4_Vending
 {
-    class VendingMachine
+    internal class VendingMachine
     {
         private int depositedAmount;
-        const int COST_OF_DRINK = 75; // Set the cost of the beverage in order to prevent magic numbers and cost can be changes once. 
+        private const int COST_OF_DRINK = 75; // Set the cost of the beverage in order to prevent magic numbers and cost can be changes once.
 
         public VendingMachine()
         {
@@ -18,21 +14,25 @@ namespace Ch4_Vending
 
         public void DepositCoin(int coinAmount)
         {
-            depositedAmount = coinAmount;
+            depositedAmount += coinAmount;
         }
 
         public void getDrink()
         {
             if (depositedAmount >= 75)
-            {    // This will calculation the amount deposited - cost of beverage 
+            {    // This will calculation the amount deposited - cost of beverage
                 Console.WriteLine("Your change is {0:} cents", depositedAmount - COST_OF_DRINK);
-                DepositCoin(0); // Call the method to set deposited amount to Zero.
+                depositedAmount = 0; // Call the method to set deposited amount to Zero.
             }
             else
             {
-
+                Console.WriteLine("Insert More Coins"); // Prompts user to add more coins to meet value of the beverage
             }
         }
 
+        public void getRefund()
+        {
+            Console.WriteLine("You were refunded {0}", depositedAmount); // Deposit money to user
+        }
     }
 }
