@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11AC2FDE-A9E7-450E-9FEA-74EF2979DD7A}</ProjectGuid>
+    <ProjectGuid>{CEF3CE1C-1F6F-40D2-A58A-87DAF66D39DB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>VendingMachine</RootNamespace>
-    <AssemblyName>VendingMachine</AssemblyName>
+    <RootNamespace>Ch4_Vending</RootNamespace>
+    <AssemblyName>Ch4-Vending</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VendingMachine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

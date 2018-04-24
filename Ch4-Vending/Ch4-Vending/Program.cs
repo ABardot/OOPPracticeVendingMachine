@@ -3,6 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+namespace Ch4_Vending
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+}
+
 //Create a Console application called “Ch4-Vending“. 
 
 //Add a class to the application called “VendingMachine“.This class will be composed of one field(i.e., instance variable or attribute) and several methods as follows:
@@ -16,14 +27,3 @@ using System.Threading.Tasks;
 //A method(no return value) called “GetRefund” with no parameters
 //This method simply displays “You were refunded {refund amount}” (refund amount should be the whole DepositedAmount) to the console and resets the machine’s DepositedAmountback to 0.
 //Your Main method should create a single instance of your VendingMachine class. You should then call methods on this object to fully test that the machine is functioning properly. No need to get input from the user. Just “hard code” instructions in your Main method.
-
-
-namespace VendingMachine
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
-}
